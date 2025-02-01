@@ -1,8 +1,8 @@
 <template>
 
    <div>
-      This is an Index page.
-      <Link href="/hello">Show Page</Link>
+      This is a Show page.
+      <Link href="/">Back to main page</Link>
    </div>
 
 </template>
