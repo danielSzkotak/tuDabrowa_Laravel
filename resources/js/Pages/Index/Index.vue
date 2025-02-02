@@ -1,6 +1,6 @@
 <template>
       <div>
-         This is an Index page xxx.
+         This is an Index page.
          <Link href="/hello">Show Page</Link>
       </div>
       <div>
