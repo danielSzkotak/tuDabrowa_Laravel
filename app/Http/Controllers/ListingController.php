@@ -27,7 +27,7 @@ class ListingController extends Controller
      */
     public function create()
     {
-        //
+        return inertia('Listing/Create');
     }
 
     /**
@@ -35,7 +35,12 @@ class ListingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->all());  - sprawdzimy na ekranie czy dane zostały odebrane na backendzie
+
+        Listing::create($request->all());
+
+        return redirect()->route('listing.index')->with('success', 'Listong was created !');
+
     }
 
     /**
